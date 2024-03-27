@@ -4,12 +4,53 @@
     box-sizing: border-box;
 }
 
-.khinkali img {
+body {
+    background-image: url(images/table.png);
+}
+
+.khinkali img,
+.khachapuri img {
     width: 450px;
     height: 300px;
 }
 
-.khachapuri img {
+.khinkali {
     width: 450px;
     height: 300px;
+    position: absolute;
+    animation-name: khinkali;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes khinkali {
+    0% {
+        left: 0px;
+        top: 0px;
+}
+       
+    25% {
+       left: 375px;
+       top: 300px;
+}
+
+    50% {
+        left: 750px;
+        top: 600px;
+}
+      
+    75% {
+        left: 1125px;
+        top: 300px;
+}
+
+    100% {
+        left: 1500px;
+        top: 0px;
+        
+}
+
 }
