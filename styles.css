@@ -3,3 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.khinkali img {
+    width: 450px;
+    height: 300px;
+}
+
+.khachapuri img {
+    width: 450px;
+    height: 300px;
+}
