@@ -19,7 +19,19 @@ body {
     height: 300px;
     position: absolute;
     animation-name: khinkali;
-    animation-duration: 2s;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+.khachapuri {
+    width: 450px;
+    height: 300px;
+    position: absolute;
+    animation-name: khachapuri;
+    animation-duration: 9s;
     animation-timing-function: linear;
     animation-direction: alternate;
     animation-fill-mode: forwards;
@@ -29,28 +41,59 @@ body {
 @keyframes khinkali {
     0% {
         left: 0px;
-        top: 0px;
+        top: 0px;;
 }
        
     25% {
        left: 375px;
        top: 300px;
+       transform: rotate(90deg);
 }
 
     50% {
         left: 750px;
         top: 600px;
+        transform: rotate(180deg);;
 }
       
     75% {
         left: 1125px;
         top: 300px;
+        transform: rotate(270deg);
 }
 
     100% {
-        left: 1500px;
+        left: 1470px;
         top: 0px;
-        
+        transform: rotate(360deg);    
+}
+
+}
+
+@keyframes khachapuri {
+    0% {
+        left: 0px;
+        bottom: 0px;;
+}
+       
+    25% {
+       left: 375px;
+       bottom: 300px;
+}
+
+    50% {
+        left: 750px;
+        bottom: 600px;
+}
+      
+    75% {
+        left: 1125px;
+        bottom: 300px;
+}
+
+    100% {
+        left: 1470px;
+        bottom: 0px;    
 }
 
 }
